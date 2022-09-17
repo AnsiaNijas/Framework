@@ -14,6 +14,10 @@ public class LoginPage
 	WebElement password;
 	@FindBy(xpath="//button[@type='submit']")
 	WebElement signIn;
+	@FindBy(xpath="//div[@class='alert alert-danger alert-dismissible']")
+	WebElement errorMsg;
+	@FindBy(xpath="//li[contains(text(),'Dashboard')]")
+	WebElement dashBoard;
    
    public void login(String username1, String password1)
    {
@@ -38,8 +42,15 @@ public class LoginPage
 	  username.clear();
 	  password.clear();
    }
-  
-  
+   public String getErrorMessage()  
+   {
+	   return errorMsg.getText();
+   }
+   public String getDashBoard()  
+   {
+	   return dashBoard.getText();
+   }
+   
    
    public LoginPage(WebDriver driver)
    {

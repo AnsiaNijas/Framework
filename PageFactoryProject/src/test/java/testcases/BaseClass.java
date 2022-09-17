@@ -1,32 +1,19 @@
 package testcases;
 
-import org.testng.annotations.Test;
+
 
 import ExtendReport.ExtentManager;
 import UtilityRepository.GeneralUtilities;
 import UtilityRepository.Screenshots;
-
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-
-import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.Date;
 import java.util.Properties;
-
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.io.FileHandler;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 
 public class  BaseClass 

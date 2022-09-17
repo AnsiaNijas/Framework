@@ -2,7 +2,6 @@ package UtilityRepository;
 
 import java.io.File;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.openqa.selenium.OutputType;
