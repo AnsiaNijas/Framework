@@ -6,8 +6,8 @@
     <groups>
     </groups>
     <test started-at="2022-07-27T18:23:43 IST" name="ChromeTest" finished-at="2022-07-27T18:24:06 IST" duration-ms="22693">
-      <class name="testcases.login">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:testcases.login@26d9b808]" started-at="2022-07-27T18:23:43 IST" name="beforeTest" finished-at="2022-07-27T18:24:02 IST" duration-ms="18171" status="PASS">
+      <class name="testcases.LoginTest">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:testcases.LoginTest@26d9b808]" started-at="2022-07-27T18:23:43 IST" name="beforeTest" finished-at="2022-07-27T18:24:02 IST" duration-ms="18171" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.login@26d9b808]" started-at="2022-07-27T18:24:02 IST" name="beforeMethod" finished-at="2022-07-27T18:24:02 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.LoginTest@26d9b808]" started-at="2022-07-27T18:24:02 IST" name="beforeMethod" finished-at="2022-07-27T18:24:02 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="validateWithInvalidUsernameAndPassword()[pri:1, instance:testcases.login@26d9b808]" started-at="2022-07-27T18:24:02 IST" name="validateWithInvalidUsernameAndPassword" description="Invalid username and password" finished-at="2022-07-27T18:24:04 IST" duration-ms="2460" status="FAIL">
+        <test-method signature="validateWithInvalidUsernameAndPassword()[pri:1, instance:testcases.LoginTest@26d9b808]" started-at="2022-07-27T18:24:02 IST" name="validateWithInvalidUsernameAndPassword" description="Invalid username and password" finished-at="2022-07-27T18:24:04 IST" duration-ms="2460" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.apache.poi.ss.usermodel.Cell.getStringCellValue()" because "c" is null]]>
@@ -30,7 +30,7 @@
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Cell.getStringCellValue()" because "c" is null
 at UtilityRepository.ExcelReadSample.readingStringData(ExcelReadSample.java:30)
-at testcases.login.validateWithInvalidUsernameAndPassword(login.java:27)
+at testcases.LoginTest.validateWithInvalidUsernameAndPassword(login.java:27)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -65,15 +65,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateWithInvalidUsernameAndPassword -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.login@26d9b808]" started-at="2022-07-27T18:24:04 IST" name="afterMethod" finished-at="2022-07-27T18:24:04 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.LoginTest@26d9b808]" started-at="2022-07-27T18:24:04 IST" name="afterMethod" finished-at="2022-07-27T18:24:04 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.login@26d9b808]" started-at="2022-07-27T18:24:04 IST" name="beforeMethod" finished-at="2022-07-27T18:24:04 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.LoginTest@26d9b808]" started-at="2022-07-27T18:24:04 IST" name="beforeMethod" finished-at="2022-07-27T18:24:04 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="validateWithoutAddingUsernameAndPassword()[pri:2, instance:testcases.login@26d9b808]" started-at="2022-07-27T18:24:04 IST" name="validateWithoutAddingUsernameAndPassword" description="Without adding username and password" finished-at="2022-07-27T18:24:06 IST" duration-ms="1652" status="FAIL">
+        <test-method signature="validateWithoutAddingUsernameAndPassword()[pri:2, instance:testcases.LoginTest@26d9b808]" started-at="2022-07-27T18:24:04 IST" name="validateWithoutAddingUsernameAndPassword" description="Without adding username and password" finished-at="2022-07-27T18:24:06 IST" duration-ms="1652" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.apache.poi.ss.usermodel.Row.getCell(int)" because "r" is null]]>
@@ -81,7 +81,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Row.getCell(int)" because "r" is null
 at UtilityRepository.ExcelReadSample.readingStringData(ExcelReadSample.java:29)
-at testcases.login.validateWithoutAddingUsernameAndPassword(login.java:43)
+at testcases.LoginTest.validateWithoutAddingUsernameAndPassword(login.java:43)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -116,15 +116,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateWithoutAddingUsernameAndPassword -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.login@26d9b808]" started-at="2022-07-27T18:24:06 IST" name="afterMethod" finished-at="2022-07-27T18:24:06 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.LoginTest@26d9b808]" started-at="2022-07-27T18:24:06 IST" name="afterMethod" finished-at="2022-07-27T18:24:06 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.login@26d9b808]" started-at="2022-07-27T18:24:06 IST" name="beforeMethod" finished-at="2022-07-27T18:24:06 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.LoginTest@26d9b808]" started-at="2022-07-27T18:24:06 IST" name="beforeMethod" finished-at="2022-07-27T18:24:06 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="validateWithoutAddingUsername()[pri:3, instance:testcases.login@26d9b808]" started-at="2022-07-27T18:24:06 IST" name="validateWithoutAddingUsername" description="Without adding username" finished-at="2022-07-27T18:24:06 IST" duration-ms="102" status="FAIL">
+        <test-method signature="validateWithoutAddingUsername()[pri:3, instance:testcases.LoginTest@26d9b808]" started-at="2022-07-27T18:24:06 IST" name="validateWithoutAddingUsername" description="Without adding username" finished-at="2022-07-27T18:24:06 IST" duration-ms="102" status="FAIL">
           <exception class="org.openqa.selenium.UnhandledAlertException">
             <message>
               <![CDATA[unexpected alert open: {Alert text : User or Password is not valid}
@@ -159,7 +159,7 @@ at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(Def
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 at jdk.proxy2/jdk.proxy2.$Proxy19.sendKeys(Unknown Source)
 at elementRepository.loginpage.typePassword(loginpage.java:26)
-at testcases.login.validateWithoutAddingUsername(login.java:52)
+at testcases.LoginTest.validateWithoutAddingUsername(login.java:52)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -194,15 +194,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateWithoutAddingUsername -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.login@26d9b808]" started-at="2022-07-27T18:24:06 IST" name="afterMethod" finished-at="2022-07-27T18:24:06 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.LoginTest@26d9b808]" started-at="2022-07-27T18:24:06 IST" name="afterMethod" finished-at="2022-07-27T18:24:06 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.login@26d9b808]" started-at="2022-07-27T18:24:06 IST" name="beforeMethod" finished-at="2022-07-27T18:24:06 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.LoginTest@26d9b808]" started-at="2022-07-27T18:24:06 IST" name="beforeMethod" finished-at="2022-07-27T18:24:06 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="validateWithoutAddingPassword()[pri:4, instance:testcases.login@26d9b808]" started-at="2022-07-27T18:24:06 IST" name="validateWithoutAddingPassword" description="Without adding password" finished-at="2022-07-27T18:24:06 IST" duration-ms="79" status="FAIL">
+        <test-method signature="validateWithoutAddingPassword()[pri:4, instance:testcases.LoginTest@26d9b808]" started-at="2022-07-27T18:24:06 IST" name="validateWithoutAddingPassword" description="Without adding password" finished-at="2022-07-27T18:24:06 IST" duration-ms="79" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.apache.poi.ss.usermodel.Cell.getStringCellValue()" because "c" is null]]>
@@ -210,7 +210,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Cell.getStringCellValue()" because "c" is null
 at UtilityRepository.ExcelReadSample.readingStringData(ExcelReadSample.java:30)
-at testcases.login.validateWithoutAddingPassword(login.java:65)
+at testcases.LoginTest.validateWithoutAddingPassword(login.java:65)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -245,19 +245,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateWithoutAddingPassword -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.login@26d9b808]" started-at="2022-07-27T18:24:06 IST" name="afterMethod" finished-at="2022-07-27T18:24:06 IST" duration-ms="11" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.LoginTest@26d9b808]" started-at="2022-07-27T18:24:06 IST" name="afterMethod" finished-at="2022-07-27T18:24:06 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcases.login@26d9b808]" started-at="2022-07-27T18:24:06 IST" name="afterTest" finished-at="2022-07-27T18:24:06 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcases.LoginTest@26d9b808]" started-at="2022-07-27T18:24:06 IST" name="afterTest" finished-at="2022-07-27T18:24:06 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- testcases.login -->
+      </class> <!-- testcases.LoginTest -->
     </test> <!-- ChromeTest -->
     <test started-at="2022-07-27T18:24:06 IST" name="EdgeTest" finished-at="2022-07-27T18:24:51 IST" duration-ms="44537">
-      <class name="testcases.login">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:testcases.login@8519cb4]" started-at="2022-07-27T18:24:06 IST" name="beforeTest" finished-at="2022-07-27T18:24:48 IST" duration-ms="42060" status="PASS">
+      <class name="testcases.LoginTest">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:testcases.LoginTest@8519cb4]" started-at="2022-07-27T18:24:06 IST" name="beforeTest" finished-at="2022-07-27T18:24:48 IST" duration-ms="42060" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -268,11 +268,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.login@8519cb4]" started-at="2022-07-27T18:24:48 IST" name="beforeMethod" finished-at="2022-07-27T18:24:48 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.LoginTest@8519cb4]" started-at="2022-07-27T18:24:48 IST" name="beforeMethod" finished-at="2022-07-27T18:24:48 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="validateWithInvalidUsernameAndPassword()[pri:1, instance:testcases.login@8519cb4]" started-at="2022-07-27T18:24:48 IST" name="validateWithInvalidUsernameAndPassword" description="Invalid username and password" finished-at="2022-07-27T18:24:48 IST" duration-ms="91" status="FAIL">
+        <test-method signature="validateWithInvalidUsernameAndPassword()[pri:1, instance:testcases.LoginTest@8519cb4]" started-at="2022-07-27T18:24:48 IST" name="validateWithInvalidUsernameAndPassword" description="Invalid username and password" finished-at="2022-07-27T18:24:48 IST" duration-ms="91" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.apache.poi.ss.usermodel.Cell.getStringCellValue()" because "c" is null]]>
@@ -280,7 +280,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Cell.getStringCellValue()" because "c" is null
 at UtilityRepository.ExcelReadSample.readingStringData(ExcelReadSample.java:30)
-at testcases.login.validateWithInvalidUsernameAndPassword(login.java:27)
+at testcases.LoginTest.validateWithInvalidUsernameAndPassword(login.java:27)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -315,15 +315,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateWithInvalidUsernameAndPassword -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.login@8519cb4]" started-at="2022-07-27T18:24:48 IST" name="afterMethod" finished-at="2022-07-27T18:24:48 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.LoginTest@8519cb4]" started-at="2022-07-27T18:24:48 IST" name="afterMethod" finished-at="2022-07-27T18:24:48 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.login@8519cb4]" started-at="2022-07-27T18:24:48 IST" name="beforeMethod" finished-at="2022-07-27T18:24:48 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.LoginTest@8519cb4]" started-at="2022-07-27T18:24:48 IST" name="beforeMethod" finished-at="2022-07-27T18:24:48 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="validateWithoutAddingUsernameAndPassword()[pri:2, instance:testcases.login@8519cb4]" started-at="2022-07-27T18:24:48 IST" name="validateWithoutAddingUsernameAndPassword" description="Without adding username and password" finished-at="2022-07-27T18:24:51 IST" duration-ms="2178" status="FAIL">
+        <test-method signature="validateWithoutAddingUsernameAndPassword()[pri:2, instance:testcases.LoginTest@8519cb4]" started-at="2022-07-27T18:24:48 IST" name="validateWithoutAddingUsernameAndPassword" description="Without adding username and password" finished-at="2022-07-27T18:24:51 IST" duration-ms="2178" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.apache.poi.ss.usermodel.Row.getCell(int)" because "r" is null]]>
@@ -331,7 +331,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Row.getCell(int)" because "r" is null
 at UtilityRepository.ExcelReadSample.readingStringData(ExcelReadSample.java:29)
-at testcases.login.validateWithoutAddingUsernameAndPassword(login.java:43)
+at testcases.LoginTest.validateWithoutAddingUsernameAndPassword(login.java:43)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -366,11 +366,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateWithoutAddingUsernameAndPassword -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.login@8519cb4]" started-at="2022-07-27T18:24:51 IST" name="afterMethod" finished-at="2022-07-27T18:24:51 IST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.LoginTest@8519cb4]" started-at="2022-07-27T18:24:51 IST" name="afterMethod" finished-at="2022-07-27T18:24:51 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="validateWithoutAddingUsername()[pri:3, instance:testcases.login@8519cb4]" started-at="2022-07-27T18:24:51 IST" name="validateWithoutAddingUsername" description="Without adding username" finished-at="2022-07-27T18:24:51 IST" duration-ms="48" status="FAIL">
+        <test-method signature="validateWithoutAddingUsername()[pri:3, instance:testcases.LoginTest@8519cb4]" started-at="2022-07-27T18:24:51 IST" name="validateWithoutAddingUsername" description="Without adding username" finished-at="2022-07-27T18:24:51 IST" duration-ms="48" status="FAIL">
           <exception class="org.openqa.selenium.UnhandledAlertException">
             <message>
               <![CDATA[unexpected alert open: {Alert text : User or Password is not valid}
@@ -405,7 +405,7 @@ at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(Def
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 at jdk.proxy2/jdk.proxy2.$Proxy19.sendKeys(Unknown Source)
 at elementRepository.loginpage.typePassword(loginpage.java:26)
-at testcases.login.validateWithoutAddingUsername(login.java:52)
+at testcases.LoginTest.validateWithoutAddingUsername(login.java:52)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -440,11 +440,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateWithoutAddingUsername -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.login@8519cb4]" started-at="2022-07-27T18:24:51 IST" name="beforeMethod" finished-at="2022-07-27T18:24:51 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.LoginTest@8519cb4]" started-at="2022-07-27T18:24:51 IST" name="beforeMethod" finished-at="2022-07-27T18:24:51 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="validateWithoutAddingPassword()[pri:4, instance:testcases.login@8519cb4]" started-at="2022-07-27T18:24:51 IST" name="validateWithoutAddingPassword" description="Without adding password" finished-at="2022-07-27T18:24:51 IST" duration-ms="48" status="FAIL">
+        <test-method signature="validateWithoutAddingPassword()[pri:4, instance:testcases.LoginTest@8519cb4]" started-at="2022-07-27T18:24:51 IST" name="validateWithoutAddingPassword" description="Without adding password" finished-at="2022-07-27T18:24:51 IST" duration-ms="48" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.apache.poi.ss.usermodel.Cell.getStringCellValue()" because "c" is null]]>
@@ -452,7 +452,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Cell.getStringCellValue()" because "c" is null
 at UtilityRepository.ExcelReadSample.readingStringData(ExcelReadSample.java:30)
-at testcases.login.validateWithoutAddingPassword(login.java:65)
+at testcases.LoginTest.validateWithoutAddingPassword(login.java:65)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -487,23 +487,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateWithoutAddingPassword -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.login@8519cb4]" started-at="2022-07-27T18:24:51 IST" name="beforeMethod" finished-at="2022-07-27T18:24:51 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.LoginTest@8519cb4]" started-at="2022-07-27T18:24:51 IST" name="beforeMethod" finished-at="2022-07-27T18:24:51 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.login@8519cb4]" started-at="2022-07-27T18:24:51 IST" name="afterMethod" finished-at="2022-07-27T18:24:51 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.LoginTest@8519cb4]" started-at="2022-07-27T18:24:51 IST" name="afterMethod" finished-at="2022-07-27T18:24:51 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.login@8519cb4]" started-at="2022-07-27T18:24:51 IST" name="afterMethod" finished-at="2022-07-27T18:24:51 IST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.LoginTest@8519cb4]" started-at="2022-07-27T18:24:51 IST" name="afterMethod" finished-at="2022-07-27T18:24:51 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcases.login@8519cb4]" started-at="2022-07-27T18:24:51 IST" name="afterTest" finished-at="2022-07-27T18:24:51 IST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcases.LoginTest@8519cb4]" started-at="2022-07-27T18:24:51 IST" name="afterTest" finished-at="2022-07-27T18:24:51 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- testcases.login -->
+      </class> <!-- testcases.LoginTest -->
     </test> <!-- EdgeTest -->
   </suite> <!-- Suite -->
 </testng-results>

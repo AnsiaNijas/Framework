@@ -19,7 +19,7 @@ static XSSFSheet s;
 
 	public  ExcelReadSample() throws Exception
 	{
-		f=new FileInputStream("D:\\Java (Shone)\\PageFactoryProject\\src\\main\\resources\\Excel File\\ExcelReadSample.xlsx");
+		f=new FileInputStream("C:\\Users\\ansia\\git\\testProject\\PageFactoryProject\\src\\main\\resources\\Excel File\\ExcelReadSample.xlsx");
 		w=new XSSFWorkbook(f);
 		s=w.getSheet("Sheet1");
 	}

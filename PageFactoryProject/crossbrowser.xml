@@ -5,14 +5,14 @@
 <parameter name ="browser" value="chrome"></parameter>
 
     <classes>
-      <class name="testcases.login"/>
+      <class name="testcases.LoginTest"/>
     </classes>
   </test> <!-- Test -->
 <test thread-count="5" name="EdgeTest">
 <parameter name ="browser" value="edge"></parameter>
 
     <classes>
-      <class name="testcases.login"/>
+      <class name="testcases.LoginTest"/>
     </classes>
   </test> 
 </suite> <!-- Suite -->
