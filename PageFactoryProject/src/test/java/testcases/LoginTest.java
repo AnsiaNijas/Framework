@@ -22,10 +22,11 @@ public class LoginTest extends BaseClass
   @Test(priority=1,description="Invalid username and password",enabled=true,groups="sanity")
   public void validateWithInvalidUsernameAndPassword() throws Exception 
   {
+	 
 	  loginobj =new LoginPage(driver);
 	  excelobj=new ExcelReadSample();
+	  extentTest.get().log(Status.PASS, "LOG SOMETHING HERE");
 	  loginobj.login(ExcelReadSample.readingStringData(0, 0), ExcelReadSample.readingStringData(0, 1));
-	  
 	  Assert.assertEquals(loginobj.getErrorMessage(), Constants.expected);
 	  extentTest.get().log(Status.PASS, "LOG SOMETHING HERE");
   }
