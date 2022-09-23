@@ -1,12 +1,9 @@
-package ExtendReport;
+package com.supermarketdemo.extendreport;
 
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-
-
-
-import testcases.BaseClass;
+import com.supermarketdemo.tests.BaseClass;
 
 import org.testng.ITestContext;
 import org.testng.ITestListener;

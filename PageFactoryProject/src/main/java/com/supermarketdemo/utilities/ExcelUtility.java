@@ -1,4 +1,4 @@
-package UtilityRepository;
+package com.supermarketdemo.utilities;
 
 import java.io.FileInputStream;
 
@@ -7,7 +7,7 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class ExcelReadSample 
+public class ExcelUtility 
 {
 static FileInputStream f;
 static XSSFWorkbook w;
@@ -15,9 +15,9 @@ static XSSFSheet s;
 
 
 
-	public  ExcelReadSample() throws Exception
+	public  ExcelUtility() throws Exception
 	{
-		f=new FileInputStream("C:\\Users\\ansia\\git\\testProject\\PageFactoryProject\\src\\main\\resources\\Excel File\\ExcelReadSample.xlsx");
+		f=new FileInputStream("C:\\Users\\ansia\\git\\testProject\\PageFactoryProject\\src\\main\\resources\\excelFile\\TestData.xlsx");
 		w=new XSSFWorkbook(f);
 		s=w.getSheet("Sheet1");
 	}

@@ -1,4 +1,4 @@
-package elementRepository;
+package com.supermarketdemo.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -24,6 +24,8 @@ public class LoginPage
 		   username.sendKeys(username1);
 		   password.sendKeys(password1);
 		   signIn.click();
+		   username.clear();
+		   password.clear();
    }
    public void typeUserName(String username1 )
    {

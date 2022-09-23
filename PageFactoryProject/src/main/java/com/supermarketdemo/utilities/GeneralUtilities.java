@@ -1,5 +1,7 @@
-package UtilityRepository;
+package com.supermarketdemo.utilities;
 
+import java.io.File;
+import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
@@ -7,11 +9,14 @@ import java.util.Date;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.Select;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -37,15 +42,12 @@ public class GeneralUtilities
     	
     		  
     	driver.manage().window().maximize();
-    	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+    	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
     	driver.get(url);
     	return driver;
     	                
     }
-    
-    
   
-    
     public void clickcommand(WebElement element)
     {
     	element.click();
@@ -139,6 +141,15 @@ public class GeneralUtilities
 		return completeDate.substring(0, 2);
 
 	}
+	public void captureScreenshot(WebDriver driver, String methodName) throws IOException
+    {
+		  Date d=new Date();
+		  String date=d.toString().replace(":","_").replace(" ","_")+".png";
+		  TakesScreenshot ts=(TakesScreenshot)driver;
+		  File source =ts.getScreenshotAs(OutputType.FILE);
+		  FileHandler.copy(source,new File("./Screenshots/"+methodName+ date)); 
+	      
+  }
     }
 
 

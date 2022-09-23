@@ -1,4 +1,4 @@
-package UtilityRepository;
+package com.supermarketdemo.utilities;
 
 import java.awt.AWTException;
 import java.awt.Robot;

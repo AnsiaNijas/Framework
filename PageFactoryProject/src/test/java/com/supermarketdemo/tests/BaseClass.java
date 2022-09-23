@@ -1,10 +1,5 @@
-package testcases;
+package com.supermarketdemo.tests;
 
-
-
-import ExtendReport.ExtentManager;
-import UtilityRepository.GeneralUtilities;
-import UtilityRepository.Screenshots;
 import org.testng.annotations.BeforeSuite;
 import java.io.FileInputStream;
 import java.util.Properties;
@@ -14,6 +9,10 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Parameters;
+
+import com.supermarketdemo.extendreport.ExtentManager;
+import com.supermarketdemo.utilities.GeneralUtilities;
+
 import org.testng.annotations.BeforeClass;
 
 public class  BaseClass 
@@ -24,27 +23,27 @@ public class  BaseClass
   public static void testBasic() throws Exception
   {	  
 	  po = new Properties();
-	  FileInputStream file=new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\Properties\\Configuration.properties");
+	  FileInputStream file=new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\propertyFile\\configuration.properties");
 	  po.load(file);
   }
   
-  @BeforeSuite
+  @BeforeSuite(alwaysRun=true)
   public void createReport(final ITestContext testContext) {
-      ExtentManager.createInstance().createTest(testContext.getName(), "message");
+	  ExtentManager.createInstance().createTest(testContext.getName(), "message");
   }
   
-  @AfterMethod(groups="sanity")
+  @AfterMethod(alwaysRun=true,groups="sanity")
   public void afterMethod(ITestResult result) throws Exception 
   {
-	  Screenshots takeScreenshotsobj=new Screenshots();
+	  
 	  if(ITestResult.FAILURE==result.getStatus())
 	  {
-		  takeScreenshotsobj.captureScreenshot(driver, result.getName());
+		  utilobj.captureScreenshot(driver, result.getName());
 			 
 	  }
   }
   @Parameters({"browser"})
-  @BeforeClass(groups="sanity")
+  @BeforeClass(alwaysRun=true,groups="sanity")
   public void beforeTest(String browser) throws Exception
   {
 	  
@@ -52,7 +51,7 @@ public class  BaseClass
 	  driver=utilobj.browserLaunch(po.getProperty("URL"),browser);
   }
 
-  @AfterClass(groups="sanity")
+  @AfterClass(alwaysRun=true,groups="sanity")
   public void afterTest()
   {
 	  driver.close();

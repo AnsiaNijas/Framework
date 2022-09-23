@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="4" name="Suite" parallel="tests">
+<suite name="Suite">
+<listeners>
+    <listener class-name="com.supermarketdemo.extendreport.TestListener"/>
+  </listeners>
   <test thread-count="4" name="Test" parallel="tests">
   <parameter name ="browser" value="chrome"></parameter>
     <classes>
-      <class name="testcases.LoginTest"/>
+      <class name="com.supermarketdemo.tests.LoginTest"/>
       
     </classes>
   </test> <!-- Test -->

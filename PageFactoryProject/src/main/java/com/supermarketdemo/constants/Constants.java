@@ -1,4 +1,4 @@
-package constants;
+package com.supermarketdemo.constants;
 
 public class Constants 
 {

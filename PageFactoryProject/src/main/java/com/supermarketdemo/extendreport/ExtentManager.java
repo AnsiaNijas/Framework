@@ -1,4 +1,4 @@
-package ExtendReport;
+package com.supermarketdemo.extendreport;
 
 import java.io.File;
 
